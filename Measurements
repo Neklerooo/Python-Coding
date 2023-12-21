@@ -1,0 +1,9 @@
+length_feet = float(input("Enter the length of the field in feet: "))
+width_feet = float(input("Enter the width of the field in feet: "))
+
+area_square_feet = length_feet * width_feet
+
+acres_conversion_factor = 1 / 43560  # 1 acre = 43,560 square feet
+area_acres = area_square_feet * acres_conversion_factor
+
+print("The area of the field is {:.2f} acres.".format(area_acres))
